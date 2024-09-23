@@ -1,4 +1,5 @@
-import Lottie from './Lottie';
+import Icons from './utils/Icons';
+import ComponentFactory from './ComponentFactory';
 
 class Main {
   constructor() {
@@ -6,7 +7,10 @@ class Main {
   }
 
   init() {
-    new Lottie();
+    document.documentElement.classList.add('has-js');
+
+    Icons.load();
+    new ComponentFactory();
   }
 }
 new Main();

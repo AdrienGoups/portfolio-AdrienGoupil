@@ -1,0 +1,35 @@
+footer {
+    padding: 40px 0;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-white);
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+        a {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: var(--color-secondary);
+            border-radius: 100%;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: var(--color-white);
+        }
+    }
+}
