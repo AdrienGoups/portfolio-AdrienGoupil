@@ -1,0 +1,25 @@
+.contact {
+    .wrapper {
+        padding: 60px 0;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .button {
+            width: fit-content;
+        }
+        margin-bottom: 40px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .button {
+            width: fit-content;
+        }
+    }
+}

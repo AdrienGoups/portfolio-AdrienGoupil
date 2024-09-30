@@ -5,7 +5,7 @@
    ========================================================================== */
 
 body {
-    color: var(--color-black);
+    color: var(--color-white);
     font-family: var(--font-secondary);
     font-size: var(--font-size-content);
     line-height: 1.6;
@@ -28,6 +28,7 @@ body {
         background-color: var(--color-primary);
         border-radius: 100px;
         transition: all 0.4s $ease-out-expo;
+        text-transform: uppercase;
         &:hover,
         a {
             background-color: var(--color-secondary);
