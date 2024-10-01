@@ -31,3 +31,35 @@
         }
     }
 }
+
+.about-hero {
+    position: relative;
+    height: 890px;
+    .content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        left: 520px;
+        width: fit-content;
+        height: 890px;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+    }
+    .text-hero {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 875px;
+    }
+    img {
+        left: 395px;
+        position: absolute;
+        z-index: -100;
+        object-fit: cover;
+        width: 670px;
+        height: 850px;
+        display: block;
+        margin-top: 40px;
+    }
+}
