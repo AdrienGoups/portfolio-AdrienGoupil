@@ -50,3 +50,35 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @media screen and (max-width: $breakpoint-md) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.app-icon {
+    display: flex;
+    gap: 20px;
+    .icon {
+        width: 48px;
+        height: 48px;
+        fill: var(--color-white);
+    }
+    .icon-container {
+        height: 68px;
+        width: 68px;
+        padding: 10px;
+        background-color: var(--color-secondary);
+        border-radius: 100px;
+        transition: all 0.4s $ease-out-expo;
+        &:hover {
+            background-color: var(--color-secondary-light);
+        }
+    }
+}

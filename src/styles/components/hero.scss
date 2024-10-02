@@ -34,12 +34,16 @@
 
 .about-hero {
     position: relative;
-    height: 890px;
+    height: 850px;
+    .wrapper {
+        height: 850px;
+    }
     .content {
         position: relative;
         display: flex;
         flex-direction: column;
         left: 520px;
+        bottom: 890px;
         width: fit-content;
         height: 890px;
         justify-content: flex-end;
@@ -53,8 +57,8 @@
         width: 875px;
     }
     img {
-        left: 395px;
-        position: absolute;
+        left: 115px;
+        position: relative;
         z-index: -100;
         object-fit: cover;
         width: 670px;

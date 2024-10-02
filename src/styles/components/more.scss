@@ -1,0 +1,25 @@
+.more {
+    padding: 60px 0;
+    .grid-2 {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    .media {
+        width: fit-content;
+        height: fit-content;
+        img {
+            height: 441px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+}
