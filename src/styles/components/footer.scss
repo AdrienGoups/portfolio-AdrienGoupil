@@ -2,6 +2,8 @@ footer {
     padding: 40px 0;
     background-color: var(--color-bg-secondary);
     color: var(--color-white);
+    position: relative;
+    z-index: 2;
     .wrapper {
         display: flex;
         justify-content: space-between;

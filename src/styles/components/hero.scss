@@ -27,6 +27,7 @@
     }
     .wrapper {
         .content {
+            position: relative;
             z-index: 5;
             color: var(--color-white);
             height: calc(850px - 40px);
