@@ -2,7 +2,18 @@
     position: relative;
     height: 850px;
     &.hero-small {
+        display: flex;
+        align-items: center;
         height: 500px;
+        .button {
+            width: fit-content;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
     }
     img {
         width: 100%;

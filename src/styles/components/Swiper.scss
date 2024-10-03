@@ -1,0 +1,18 @@
+.swiper {
+    height: 600px;
+    img {
+        object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--color-primary-light);
+        opacity: 40%;
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+        &.swiper-pagination-bullet-active {
+            opacity: 100%;
+            background-color: var(--color-primary-light);
+        }
+    }
+}

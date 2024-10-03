@@ -37,8 +37,14 @@
 @import 'components/abilities';
 @import 'components/project-list';
 @import 'components/more';
+@import 'components/project-description';
+@import 'components/project-section-2';
+@import 'components/galerie';
+@import 'components/project-section-3';
+@import 'components/swiper';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import 'utilities/accessibility';
 @import 'utilities/spacing';
+@import '../../node_modules/swiper/swiper-bundle';

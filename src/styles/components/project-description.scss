@@ -1,0 +1,19 @@
+.project-description {
+    padding: 60px 0;
+    .grid-2 {
+        gap: 80px;
+    }
+    .description {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    .side {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .button {
+            width: fit-content;
+        }
+    }
+}

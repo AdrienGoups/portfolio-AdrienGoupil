@@ -6,11 +6,11 @@
     --font-primary: 'Kanit', sans-serif;
     --font-secondary: 'Be Vietnam Pro', sans-serif;
 
-    --font-size-content: #{typo(18px, 24px)};
+    --font-size-content: #{typo(16px, 20px)};
 
     /// Grosseur des textes
-    --font-size-h1: #{typo(72px, 150px)};
-    --font-size-h2: #{typo(32px, 64px)};
+    --font-size-h1: #{typo(72px, 125px)};
+    --font-size-h2: #{typo(32px, 50px)};
     --font-size-h3: #{typo(24px, 36px)};
-    --font-size-btn: #{typo(24px, 24px)};
+    --font-size-btn: #{typo(16px, 20px)};
 }
