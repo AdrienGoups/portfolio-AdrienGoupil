@@ -1,4 +1,6 @@
 .more {
+    position: relative;
+    z-index: 5;
     padding: 60px 0;
     .grid-2 {
         grid-template-columns: 1fr 1.5fr;

@@ -1,4 +1,6 @@
 .abilities {
+    position: relative;
+    z-index: 5;
     padding: 60px 0;
     background-color: var(--color-bg-secondary);
     h3 {
