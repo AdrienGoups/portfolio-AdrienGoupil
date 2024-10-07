@@ -1,5 +1,6 @@
 .background {
     user-select: none;
+    overflow: hidden;
     position: relative;
     z-index: 1;
 }
@@ -7,10 +8,11 @@
 .background-container {
     position: absolute;
     overflow: hidden;
-    height: 100%;
+    height: fit-content;
 }
 .index {
     &.background-container {
+        height: 60%;
         top: 820px;
         left: 0;
     }
@@ -18,7 +20,6 @@
 
 .list-bg {
     &.background-container {
-        height: 200%;
         top: 120px;
         left: 0;
     }
@@ -26,7 +27,6 @@
 
 .list-bg-dark {
     &.background-container {
-        height: 200%;
         top: 1300px;
         right: 0;
     }
@@ -34,7 +34,6 @@
 
 .project {
     &.background-container {
-        height: 200%;
         top: 700px;
         right: 0;
     }
@@ -42,7 +41,6 @@
 
 .about {
     &.background-container {
-        height: 200%;
         top: 120px;
         right: 0;
     }
