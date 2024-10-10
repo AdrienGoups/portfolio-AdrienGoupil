@@ -11,5 +11,8 @@
             margin: 0 0 20px 0;
         }
         gap: 20px;
+        @media screen and (max-width: $breakpoint-sm) {
+            align-items: flex-start;
+        }
     }
 }

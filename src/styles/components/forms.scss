@@ -60,6 +60,9 @@
     font-family: inherit;
     width: 480px;
     transition: all 0.5s $ease-out-expo;
+    @media screen and (max-width: $breakpoint-md) {
+        width: 100%;
+    }
 
     &:-webkit-autofill,
     &:-webkit-autofill:active {
@@ -133,9 +136,12 @@
     grid-column: 1 / -1;
     .input__element {
         width: 830px;
+        @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+        }
         border-radius: 20px;
         resize: vertical;
-        height: 380px;
+        min-height: 380px;
     }
 }
 
