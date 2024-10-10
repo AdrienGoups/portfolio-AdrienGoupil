@@ -1,0 +1,227 @@
+.form {
+    --input-radius: 100px;
+    fieldset {
+        border: none;
+        padding: 0;
+    }
+    .grid-2 {
+        width: 900px;
+        gap: var(--spacing-md);
+        @media screen and (max-width: $breakpoint-md) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.form__footer {
+    display: flex;
+    background-color: unset;
+    padding: 20px 0;
+    button {
+        color: var(--color-white);
+    }
+}
+
+.form__body {
+    .is-sent & {
+        display: none;
+    }
+}
+
+.form__confirmation {
+    display: none;
+
+    .is-sent & {
+        display: block;
+    }
+}
+
+/*
+   input
+   ========================================================================== */
+
+.input__label {
+    overflow: visible;
+    display: block;
+    font-weight: 500;
+    font-size: var(--font-size-h3);
+    font-family: var(--font-primary);
+}
+
+.input__element {
+    overflow: visible;
+    border-radius: var(--input-radius);
+    background-color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    color: var(--color-black);
+    cursor: pointer;
+    outline: none;
+    font-family: inherit;
+    width: 480px;
+    transition: all 0.5s $ease-out-expo;
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:active {
+        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
+        -webkit-text-fill-color: inherit !important;
+    }
+
+    &:hover,
+    + .input__label:hover::before {
+        background-color: var(--color-white);
+        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
+        -webkit-text-fill-color: inherit !important;
+    }
+
+    &::placeholder {
+        color: var(--color-bg-accent);
+    }
+
+    &:focus,
+    &-webkit-autofill:focus,
+    &:focus + .input__label::before {
+        overflow: visible;
+        outline: solid;
+        outline-width: 2px;
+        outline-color: var(--color-primary);
+        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
+        -webkit-text-fill-color: inherit !important;
+    }
+}
+
+/*
+   select
+   ========================================================================== */
+
+.select {
+    position: relative;
+    .input__element {
+        appearance: none;
+        padding-right: 40px;
+
+        &:invalid {
+            color: var(--color-primary);
+        }
+    }
+
+    option {
+        background-color: var(--color-white);
+        color: var(--color-black);
+    }
+
+    &::after {
+        --size: 24px;
+        content: '';
+        background: url(../assets/icons/chevron-down.svg) no-repeat 50% 50%;
+        background-size: 100%;
+        pointer-events: none;
+        height: var(--size);
+        width: var(--size);
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(25%);
+    }
+}
+
+/*
+      textarea
+      ========================================================================== */
+
+.textarea {
+    grid-column: 1 / -1;
+    .input__element {
+        width: 830px;
+        border-radius: 20px;
+        resize: vertical;
+        height: 380px;
+    }
+}
+
+/*
+         checkbox + radio
+         ========================================================================== */
+
+.checkbox,
+.radio {
+    --active-scale: 1;
+
+    .input__element {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .input__label {
+        --size: 30px;
+        cursor: pointer;
+        padding-left: calc(var(--size) + var(--spacing-sm));
+        overflow: hidden;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            height: var(--size);
+            width: var(--size);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        &::before {
+            background-color: var(--color-white);
+            border-radius: var(--input-radius);
+        }
+
+        &::after {
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.4s $ease-out-expo;
+        }
+    }
+
+    .input__element:checked + .input__label {
+        &::after {
+            opacity: 1;
+            transform: scale(var(--active-scale));
+        }
+    }
+}
+
+.checkbox {
+    .input__label::after {
+        background: url('../assets/icons/check.svg') no-repeat 50% 50%;
+        background-size: 75%;
+    }
+}
+
+.radio {
+    .input__label::after {
+        --active-scale: 0.4;
+        background-color: var(--color-black);
+        border-radius: var(--input-radius);
+    }
+}
+
+/*
+         error
+         ========================================================================== */
+
+.error {
+    .input__element {
+        box-shadow: inset 0 0 0 3px var(--color-negative);
+    }
+
+    .input__label {
+        color: var(--color-negative);
+    }
+
+    &.check .input__label::before,
+    &.radio .input__label::before,
+    .check .input__label::before,
+    .radio .input__label::before {
+        box-shadow: inset 0 0 0 3px var(--color-negative);
+    }
+}

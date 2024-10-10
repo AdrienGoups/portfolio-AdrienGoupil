@@ -36,10 +36,53 @@
         </div>
 
         <div class="form">
-            <h3 data-scrolly="fromLeft">Nom</h3>
-            <h3 data-scrolly="fromLeft">Adresse Courriel</h3>
-            <h3 data-scrolly="fromLeft">Message</h3>
-            <a class="button" href="#" data-scrolly="fromLeft">Envoyer</a>
+            <form action="" class="form" autocomplete="off" data-component="Form">
+                <div class="form__body">
+                    <fieldset>
+                        <div class="input">
+                            <label class="input__label" for="fullname">Votre nom</label>
+                            <input
+                                class="input__element"
+                                type="text"
+                                name="fullname"
+                                id="fullname"
+                                placeholder="ex.: John Multimédia"
+                                required
+                            />
+                        </div>
+
+                        <div class="input">
+                            <label class="input__label" for="email">Courriel</label>
+                            <input
+                                class="input__element"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="ex.: john.multimedia@gmail.com"
+                                required
+                            />
+                        </div>
+
+                        <div class="input textarea">
+                            <label class="input__label" for="comment">Message</label>
+                            <textarea
+                                class="input__element text_input"
+                                name="comment"
+                                placeholder="ex.: Yo ton portfolio est vraiment bussin'!"
+                                id="comment"
+                                required
+                            ></textarea>
+                        </div>
+                    </fieldset>
+                    <footer class="form__footer">
+                        <button class="button">Envoyer la requête</button>
+                    </footer>
+                </div>
+
+                <div class="form__confirmation">
+                    <h4>Votre formulaire a été envoyé</h4>
+                </div>
+            </form>
         </div>
     </div>
 </section>
