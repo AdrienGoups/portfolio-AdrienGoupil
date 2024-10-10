@@ -5,6 +5,9 @@
     .grid-2 {
         grid-template-columns: 1fr 1.5fr;
         gap: 40px;
+        @media screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: 1fr;
+        }
     }
 
     .content {

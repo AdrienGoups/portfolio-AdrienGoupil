@@ -9,6 +9,9 @@
     position: absolute;
     overflow: hidden;
     height: fit-content;
+    @media screen and (max-width: $breakpoint-lg) {
+        width: 50%;
+    }
 }
 .index {
     &.background-container {
@@ -43,5 +46,11 @@
     &.background-container {
         top: 120px;
         right: 0;
+        @media screen and (max-width: $breakpoint-lg) {
+            top: 500px;
+        }
+        @media screen and (max-width: $breakpoint-sm) {
+            display: none;
+        }
     }
 }

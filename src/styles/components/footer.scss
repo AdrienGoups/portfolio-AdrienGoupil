@@ -8,6 +8,10 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media screen and (max-width: $breakpoint-sm) {
+            gap: 40px;
+            flex-direction: column;
+        }
     }
     ul {
         display: flex;

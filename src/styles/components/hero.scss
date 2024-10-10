@@ -63,13 +63,17 @@
         height: 890px;
         justify-content: flex-end;
         padding-bottom: 20px;
+        @media screen and (max-width: $breakpoint-lg) {
+            left: 0;
+            bottom: 940px;
+        }
     }
     .text-hero {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 875px;
+        max-width: 875px;
     }
     img {
         left: 115px;
@@ -81,5 +85,16 @@
         display: block;
         margin-top: 40px;
         border-radius: 40px 40px 0 0;
+        @media screen and (max-width: $breakpoint-md) {
+            margin: 0;
+            border-radius: 0;
+            left: 0;
+            width: 100%;
+            height: 900px;
+        }
+    }
+    .hero-image-container {
+        margin: 0 auto;
+        max-width: var($breakpoint-xl);
     }
 }
