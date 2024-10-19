@@ -19,7 +19,10 @@
     }
     .media {
         position: absolute;
-        background-color: rgba(#000, $alpha: 0.3);
+        background: linear-gradient(
+            rgba($color: #000000, $alpha: 0),
+            rgba($color: #000000, $alpha: 0.4)
+        );
         width: 100%;
         height: 100%;
     }
@@ -38,6 +41,9 @@
         position: absolute;
     }
     &.hero-small img {
+        height: 500px;
+    }
+    &.hero-small video {
         height: 500px;
     }
     .wrapper {
