@@ -5,6 +5,17 @@
         padding: 60px 0;
     }
 
+    .reverse {
+        @media screen and (max-width: $breakpoint-sm) {
+            .media {
+                order: 1;
+            }
+            .content {
+                order: 2;
+            }
+        }
+    }
+
     h1 {
         margin-bottom: 60px;
     }
@@ -15,6 +26,10 @@
     }
     .card {
         gap: 40px;
+        transition: all 0.6s $ease-out-expo;
+        &:hover {
+            scale: 105%;
+        }
     }
     .content {
         display: flex;

@@ -1,6 +1,0 @@
-
-Ajouter icones de langages et applications dans a propos
-ajouter lien contact dans le header
-Faire que les hovers changent plus la couleur
-Faire un vrai logo
-probleme de z-index 2e section dans l'accueil

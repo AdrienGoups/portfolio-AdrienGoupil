@@ -9,7 +9,6 @@ body {
     font-family: var(--font-secondary);
     font-size: var(--font-size-content);
     line-height: 1.6;
-    overflow-x: hidden;
     background-color: var(--color-bg-primary);
     p {
         margin: 0;
@@ -36,6 +35,7 @@ body {
         &:hover,
         a {
             cursor: pointer;
+            scale: 110%;
             background-color: var(--color-secondary-light);
             color: var(--color-white);
         }
@@ -48,6 +48,7 @@ body {
         text-transform: uppercase;
         &:hover,
         a {
+            scale: 110%;
             background-color: var(--color-secondary-light);
             color: var(--color-white);
         }
@@ -58,10 +59,6 @@ body {
     .title-orange {
         color: var(--color-secondary-light);
     }
-}
-
-:root {
-    scroll-behavior: smooth;
 }
 
 .grid-2 {
@@ -100,6 +97,7 @@ body {
         transition: all 0.4s $ease-out-expo;
         &:hover {
             background-color: var(--color-secondary-light);
+            scale: 110%;
         }
     }
 }
