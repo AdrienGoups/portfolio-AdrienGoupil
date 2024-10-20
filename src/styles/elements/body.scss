@@ -102,3 +102,26 @@ body {
         }
     }
 }
+
+// Scrollbar
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary-light);
+}

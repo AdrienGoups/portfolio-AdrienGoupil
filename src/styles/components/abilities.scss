@@ -15,6 +15,10 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        transition: all 0.4s $ease-out-expo;
+        &:hover {
+            scale: 105%;
+        }
     }
     .icon {
         width: 24px;

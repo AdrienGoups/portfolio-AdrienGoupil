@@ -84,9 +84,9 @@
         width: fit-content;
         height: 890px;
         justify-content: flex-end;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
         @media screen and (max-width: $breakpoint-lg) {
-            justify-content: center;
+            justify-content: flex-end;
             left: 0;
         }
     }

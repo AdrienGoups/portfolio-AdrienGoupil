@@ -12,9 +12,15 @@
     }
     .grid-3 {
         gap: 20px;
+        a {
+            &:hover {
+                scale: 98%;
+            }
+        }
         img {
             object-fit: cover;
-            max-height: 600px;
+            height: 600px;
+            width: 100%;
         }
     }
 }

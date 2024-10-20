@@ -1,6 +1,9 @@
 {% include '_partials/_header.html' %} {% include '_partials/header.html' %}
 <section class="hero hero-small">
-    <img src="assets/images/temp.jpg" alt="hero" />
+    <div class="media">
+        <img src="assets/images/neco.png" alt="hero" />
+    </div>
+
     <div class="wrapper">
         <a href="project-list.html" class="button" data-scrolly="fromLeft">&#60; Retour vers la liste de projet</a>
 
@@ -20,15 +23,11 @@
     <div class="wrapper">
         <div class="grid-2">
             <div class="description">
-                <h2 data-scrolly="fromLeft">Projet Unity</h2>
+                <h2 data-scrolly="fromLeft">Projet d'animation 3D</h2>
                 <p data-scrolly="fromLeft">
-                    Projet réalisé dans le cadre du cours de jeu vidéo 2. Le jeu est un "First Person Shooter" où l'on
-                    doit éliminer des robots zombies envahissant une ville que l'on peut nommer. On peut récupérer des
-                    objets et les déposer dans une zone de collection pour améliorer la vitesse de tir. <br />
-                    Réalisé en Hiver 2023 dans le cours de jeu-vidéo 2 au Cégep Édouard-Montpetit. Le projet utilise le
-                    logiciel Unity et est programmé en C# avec VS Code. Le projet utilise des fonctionnalités comme le
-                    système de particule, le système d’animation, le NavMesh, le système d’audio Unity. Le logiciel
-                    github desktop a été utilisé pour l’archivage du projet.
+                    Animation 3D d’un combat entre deux personnages. Le projet utilise le “grease pencil” pour les
+                    effets spéciaux. Projet réalisé dans le cadre du cours d'animation multimédia du cégep Édouard
+                    Mont-petit. Le projet a été éffectué en collaboration avec Mathis Tousignant.
                 </p>
             </div>
             <div class="side">
@@ -36,76 +35,48 @@
                 <div class="app-icon">
                     <div class="icon-container" data-scrolly="fromLeft">
                         <svg class="icon">
-                            <use xlink:href="#icon-vscode"></use>
+                            <use xlink:href="#icon-blender"></use>
                         </svg>
                     </div>
                     <div class="icon-container" data-scrolly="fromLeft">
                         <svg class="icon">
-                            <use xlink:href="#icon-unity"></use>
+                            <use xlink:href="#icon-aftereffects"></use>
                         </svg>
                     </div>
                 </div>
                 <div class="credits">
-                    <h4 data-scrolly="fromLeft">Programmation et réalisation:</h4>
+                    <h4 data-scrolly="fromLeft">réalisation:</h4>
                     <ul>
                         <li data-scrolly="fromLeft">Adrien Goupil</li>
+                        <li data-scrolly="fromLeft">Mathis Tousignant</li>
                     </ul>
 
                     <h4 data-scrolly="fromLeft">Assets et textures:</h4>
                     <ul>
                         <li data-scrolly="fromLeft">
-                            <a href="https://assetstore.unity.com/packages/3d/cola-can-96659">Cola Can</a>
+                            <a>Modèle de Neco Arc par Mathis Tousignant</a>
                         </li>
                         <li data-scrolly="fromLeft">
-                            <a
-                                href="https://assetstore.unity.com/packages/2d/textures-materials/sky/free-stylized-skybox-212257"
-                                >Free stylized Skybox</a
-                            >
+                            <a>Modèle de Joof par Adrien Goupil</a>
                         </li>
                         <li data-scrolly="fromLeft">
-                            <a
-                                href="https://assetstore.unity.com/packages/2d/textures-materials/glovergames-free-ground-textures-135418"
-                                >GloverGames Free Ground Textures</a
-                            >
+                            <a>Environement par Mathis Tousignant</a>
                         </li>
                         <li data-scrolly="fromLeft">
-                            <a href="https://assetstore.unity.com/packages/vfx/shaders/particle-shaders-vol-1-35069"
-                                >Particle Shaders Vol. 1</a
-                            >
+                            <a>Textures par Adrien Goupil</a>
                         </li>
                         <li data-scrolly="fromLeft">
-                            <a
-                                href="https://assetstore.unity.com/packages/3d/environments/industrial/rpg-fps-game-assets-for-pc-mobile-industrial-set-v3-0-101429"
-                                >RPG/FPS Game Assets for PC/Mobile (Industrial Set v3.0)</a
-                            >
-                        </li>
-                        <li data-scrolly="fromLeft">
-                            <a href="https://assetstore.unity.com/packages/3d/props/guns/sci-fi-gun-heavy-87878"
-                                >Sci Fi Gun Heavy</a
-                            >
-                        </li>
-                        <li data-scrolly="fromLeft">
-                            <a href="https://assetstore.unity.com/packages/3d/characters/robots/robot-kyle-urp-4696"
-                                >Robot Kyle | URP</a
-                            >
-                        </li>
-                        <li data-scrolly="fromLeft">
-                            <a
-                                href="https://assetstore.unity.com/packages/3d/vehicles/air/high-quality-war-plane-128092"
-                                >High Quality War Plane</a
-                            >
-                        </li>
-                        <li data-scrolly="fromLeft">
-                            <a
-                                href="https://assetstore.unity.com/packages/3d/animations/zombie-animation-pack-free-150219"
-                                >Zombie Animation Pack Free</a
-                            >
+                            <a>Animation par Adrien Goupil et Mathis Tousignant</a>
                         </li>
                     </ul>
                 </div>
 
-                <a href="https://rhadish.itch.io/tim-slayer" target="_blank" class="button" data-scrolly="fromLeft"
-                    >Jouer au jeu</a
+                <a
+                    href="https://www.youtube.com/watch?v=KNl3_ROFsUc"
+                    target="_blank"
+                    class="button"
+                    data-scrolly="fromLeft"
+                    >Voir la vidéo</a
                 >
             </div>
         </div>
@@ -113,19 +84,12 @@
 </section>
 <section class="project-section-2">
     <div class="wrapper">
-        <h3 data-scrolly="fromLeft">Extraits de code</h3>
-        <div class="cards grid-3">
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le menu du jeu</p>
-                <img src="assets/images/tim-slayer-code-menu.png" alt="extrait de code" data-scrolly="fromLeft" />
-            </div>
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le systeme de tir</p>
-                <img src="assets/images/tim-slayer-code-tir.png" alt="extrait de code" data-scrolly="fromLeft" />
-            </div>
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le projectile</p>
-                <img src="assets/images/tim-slayer-code-projectile.png" alt="extrait de code" data-scrolly="fromLeft" />
+        <div class="video" data-component="Youtube" data-video-id="KNl3_ROFsUc" data-scrolly="fromLeft">
+            <div class="video__media js-video">
+                <img class="js-poster" src="assets/images/neco.png" alt="video" />
+                <svg class="icon icon--xl">
+                    <use xlink:href="#icon-play"></use>
+                </svg>
             </div>
         </div>
     </div>
@@ -135,10 +99,10 @@
     <div class="wrapper">
         <div class="swiper" data-component="Carousel" data-scrolly="fromLeft">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/images/tim-slayer1.jpg" alt="imgtimslayer" /></div>
-                <div class="swiper-slide"><img src="assets/images/tim-slayer2.jpg" alt="imgtimslayer" /></div>
+                <div class="swiper-slide"><img src="assets/images/neco_joof.png" alt="joof1" /></div>
+                <div class="swiper-slide"><img src="assets/images/neco_joof2.png" alt="joof2" /></div>
                 <div class="swiper-slide">
-                    <img src="assets/images/tim-slayer-organisation1.jpg" alt="imgtimslayer" />
+                    <img src="assets/images/neco_joof3.png" alt="joof3" />
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -151,21 +115,17 @@
         <div class="section-text">
             <h3 data-scrolly="fromLeft">Problèmes et défis</h3>
             <p data-scrolly="fromLeft">
-                J’ai eu plusieurs problèmes lors de la réalisation de ce projet. Le plus gros d’entre eux était que je
-                n’étais pas capable de tester mon jeu à la maison. J’ai rencontré un problème étrange dont je n’ai
-                jamais su la cause qui empêchait le player input de marcher. Le plus étrange est que le projet marchait
-                parfaitement sur les ordis d’écoles.
+                Il y a eu plusieurs défis dans la réalisation de ce projet. Premièrement, moi et mon coéquipier Mathis
+                ont eu besoin de s'habituer au travail d'équipe en animation 3D. Pour ne pas avoir de problèmes, nous
+                avons tous les deux travaillé dans des fichier blender différent pour modéliser nos personnages. Ensuite
+                nous avons ajouté les personnages dans une scène et après nous avons commencé l'animation des
+                personnages.
             </p>
             <p data-scrolly="fromLeft">
-                L’autre gros problème était que le saut du personnage ne marche pas toujours. Le mesh du terrain que
-                j’ai utilisé n’était pas bien optimisé pour le mouvement du personnage de mon jeu ce qui empêchait le
-                joueur d’être dans l’état “Grounded”.
-            </p>
-            <p data-scrolly="fromLeft">
-                Le dernier défis rencontré est que nous n’avions pas encore eu de cours de modélisation 3D et que les
-                assets que j’ai trouvés sur le Unity asset store n’était pas exactement les meilleurs, ce qui donne un
-                résultat peu plaisant pour les yeux. Malgré cela je suis quand même fier de mon script de tir que j’ai
-                codé par moi-même avec ce que j’ai appris pendent le cours.
+                Pour éviter un rendu trop long, nous avons décidé d'utiliser le mode de rendu EEVEE car nous décidé
+                d'aller pour un style plus cartoon/anime. Cependant, un problème s'est posé pendent le rendu final, le
+                grease pencil s'est rajouté par-dessus les autres objets, et nous n'avions plus assez de temp pour
+                trouver une solution au problème.
             </p>
         </div>
     </div>
