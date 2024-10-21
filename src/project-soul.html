@@ -7,10 +7,7 @@
     <div class="wrapper">
         <a href="project-list.html" class="button" data-scrolly="fromLeft">&#60; Retour vers la liste de projet</a>
 
-        <h1 data-scrolly="fromLeft">
-            SOUL <br />
-            SWITCH
-        </h1>
+        <h1 data-scrolly="fromLeft">Changement de personnage</h1>
         <h3 data-scrolly="fromLeft">Projet étudiant</h3>
     </div>
 </section>
@@ -50,7 +47,11 @@
                     </ul>
                 </div>
 
-                <a href="https://rhadish.itch.io/tim-slayer" target="_blank" class="button" data-scrolly="fromLeft"
+                <a
+                    href="https://rhadish.itch.io/soul-switch-prototype"
+                    target="_blank"
+                    class="button"
+                    data-scrolly="fromLeft"
                     >Démo du script</a
                 >
             </div>
@@ -61,33 +62,18 @@
     <div class="wrapper">
         <h3 data-scrolly="fromLeft">Extraits de code</h3>
         <div class="cards grid-3">
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le menu du jeu</p>
-                <img src="assets/images/tim-slayer-code-menu.png" alt="extrait de code" data-scrolly="fromLeft" />
-            </div>
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le systeme de tir</p>
-                <img src="assets/images/tim-slayer-code-tir.png" alt="extrait de code" data-scrolly="fromLeft" />
-            </div>
-            <div class="card">
-                <p data-scrolly="fromLeft">Script pour le projectile</p>
-                <img src="assets/images/tim-slayer-code-projectile.png" alt="extrait de code" data-scrolly="fromLeft" />
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="galerie">
-    <div class="wrapper">
-        <div class="swiper" data-component="Carousel" data-scrolly="fromLeft">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/images/tim-slayer1.jpg" alt="imgtimslayer" /></div>
-                <div class="swiper-slide"><img src="assets/images/tim-slayer2.jpg" alt="imgtimslayer" /></div>
-                <div class="swiper-slide">
-                    <img src="assets/images/tim-slayer-organisation1.jpg" alt="imgtimslayer" />
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+            <a href="assets/images/soul-move.png" class="card">
+                <p data-scrolly="fromLeft">Script pour le mouvement isométrique</p>
+                <img src="assets/images/soul-move.png" alt="extrait de code" data-scrolly="fromLeft" />
+            </a>
+            <a href="assets/images/soul-switch.png" class="card">
+                <p data-scrolly="fromLeft">Script pour le changement de personnage</p>
+                <img src="assets/images/soul-switch.png" alt="extrait de code" data-scrolly="fromLeft" />
+            </a>
+            <a href="assets/images/soul-camera.png" class="card">
+                <p data-scrolly="fromLeft">Script pour le changement de caméra</p>
+                <img src="assets/images/soul-camera.png" alt="extrait de code" data-scrolly="fromLeft" />
+            </a>
         </div>
     </div>
 </section>
@@ -97,21 +83,15 @@
         <div class="section-text">
             <h3 data-scrolly="fromLeft">Problèmes et défis</h3>
             <p data-scrolly="fromLeft">
-                J’ai eu plusieurs problèmes lors de la réalisation de ce projet. Le plus gros d’entre eux était que je
-                n’étais pas capable de tester mon jeu à la maison. J’ai rencontré un problème étrange dont je n’ai
-                jamais su la cause qui empêchait le player input de marcher. Le plus étrange est que le projet marchait
-                parfaitement sur les ordis d’écoles.
+                Le script de changement de personnage a été un défi à créer. Le premier problème rencontré était comment
+                trouver les joueurs. Pour régler le problème j'ai décidé de donner les Game Objects en référence et de
+                vérifier combien de joueurs sont assigné pour ne pas causer d'erreurs.
             </p>
-            <p data-scrolly="fromLeft">
-                L’autre gros problème était que le saut du personnage ne marche pas toujours. Le mesh du terrain que
-                j’ai utilisé n’était pas bien optimisé pour le mouvement du personnage de mon jeu ce qui empêchait le
-                joueur d’être dans l’état “Grounded”.
-            </p>
-            <p data-scrolly="fromLeft">
-                Le dernier défis rencontré est que nous n’avions pas encore eu de cours de modélisation 3D et que les
-                assets que j’ai trouvés sur le Unity asset store n’était pas exactement les meilleurs, ce qui donne un
-                résultat peu plaisant pour les yeux. Malgré cela je suis quand même fier de mon script de tir que j’ai
-                codé par moi-même avec ce que j’ai appris pendent le cours.
+            <p>
+                Le deuxième problème a été de faire marcher le script peut-importe quel joueur est jouable. Au début le
+                script ne fonctionnait qu'avec deux joueurs, mais lorsque j'ai ajouté un autre joueur j'ai dû revoir la
+                manière que j'avais fait le script. Le script se trouve sur un Game Object vide qui contrôle le
+                changement de personnage
             </p>
         </div>
     </div>
