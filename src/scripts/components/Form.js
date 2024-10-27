@@ -1,71 +1,71 @@
 export default class Form {
-    constructor(element) {
-      this.element = element;
-      this.formElements = this.element.elements;
-      this.init();
-    }
-    init() {
-     this.element.setAttribute('novalidate', '')
+  constructor(element) {
+    this.element = element;
+    this.formElements = this.element.elements;
+    this.init();
+  }
+  init() {
+    this.element.setAttribute('novalidate', '');
 
-     for (let i = 0; i < this.formElements.length; i++) {
+    for (let i = 0; i < this.formElements.length; i++) {
       const input = this.formElements[i];
-      if(input.required){
+      if (input.required) {
         input.addEventListener('input', this.validateInput.bind(this));
       }
-     }
-
-     this.element.addEventListener('submit', this.onSubmit.bind(this));
     }
 
-    onSubmit(event){
-      event.preventDefault();
+    this.element.addEventListener('submit', this.onSubmit.bind(this));
+  }
 
-      if(this.validate()){
-        console.log('success');
-        //envoi du formulaire
-        this.showConfirmation();
+  onSubmit(event) {
+    // event.preventDefault();
+
+    if (this.validate()) {
+      console.log('success');
+      //envoi du formulaire
+      this.showConfirmation();
+    } else {
+      console.log('error');
+    }
+  }
+
+  validate() {
+    let isValid = true;
+    for (let i = 0; i < this.formElements.length; i++) {
+      const input = this.formElements[i];
+
+      if (input.required && !this.validateInput(input)) {
+        isValid = false;
       }
-      else{
-        console.log('error');
-      }
+    }
+    return isValid;
+  }
+
+  validateInput(event) {
+    const input = event.currentTarget || event;
+
+    if (input.validity.valid) {
+      this.removeError(input);
+    } else {
+      this.addError(input);
     }
 
-    validate(){
-      let isValid = true;
-      for (let i = 0; i < this.formElements.length; i++) {
-        const input = this.formElements[i];
+    return input.validity.valid;
+  }
 
-        if(input.required && !this.validateInput(input)){
-          isValid = false;
-        }
-      }
-      return isValid;
-    }
+  addError(input) {
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
+    container.classList.add('error');
+  }
 
-    validateInput(event){
-      const input = event.currentTarget || event;
+  removeError(input) {
+    const container =
+      input.closest('[data-input-container]') || input.closest('.input');
+    container.classList.remove('error');
+  }
 
-      if(input.validity.valid){
-        this.removeError(input);
-      } else{
-        this.addError(input);
-      }
-
-      return input.validity.valid;
-    }
-
-    addError(input){
-      const container = input.closest('[data-input-container]') || input.closest('.input');
-      container.classList.add('error');
-    }
-
-    removeError(input){
-      const container = input.closest('[data-input-container]') || input.closest('.input');
-      container.classList.remove('error');
-    }
-
-    showConfirmation(){
-      this.element.classList.add('is-sent');
-    }
-   }
-   
+  showConfirmation() {
+    this.element.classList.add('is-sent');
+  }
+}
