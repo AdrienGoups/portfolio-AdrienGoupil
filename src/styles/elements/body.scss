@@ -126,3 +126,23 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-light);
 }
+
+.erreur {
+    height: 80vh;
+    padding: 60px 0;
+    h2 {
+        margin-bottom: 40px;
+    }
+    h3 {
+        margin-top: 40px;
+    }
+
+    background: url('../../assets/images/fumo.webp'),
+        linear-gradient(
+            rgba($color: #000000, $alpha: 0),
+            rgba($color: #000000, $alpha: 0.4)
+        );
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
