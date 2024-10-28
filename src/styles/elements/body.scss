@@ -84,6 +84,7 @@ body {
 .app-icon {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     .icon {
         width: 48px;
         height: 48px;
