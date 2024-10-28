@@ -10,6 +10,25 @@
         }
     }
 
+    ul {
+        margin: 20px 0;
+        padding: 0;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.4s $ease-out-expo;
+        &:hover {
+            scale: 105%;
+        }
+    }
+    .icon {
+        width: 24px;
+        height: 24px;
+        fill: var(--color-white);
+    }
+
     .content {
         display: flex;
         flex-direction: column;
