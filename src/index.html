@@ -29,66 +29,71 @@
 <section class="contact" id="contact">
     <div class="wrapper">
         <h1 data-scrolly="fromLeft">Me contacter</h1>
-        <div class="info">
-            <h3 data-scrolly="fromLeft"><a href="mailto:adrienr.goupil@gmail.com">adrienr.goupil@gmail.com</a></h3>
-            <h3 data-scrolly="fromLeft">(438) 820-8853</h3>
-            <a class="button" href="#" data-scrolly="fromLeft">Voir mon CV</a>
-        </div>
+        <div class="grid-2">
+            <div class="form">
+                <form
+                    action="https://formsubmit.co/31ed33514016147d06d311b6671441ce"
+                    method="POST"
+                    class="form"
+                    autocomplete="off"
+                    data-componetnt="Form"
+                >
+                    <div class="form__body">
+                        <fieldset>
+                            <div class="input" data-scrolly="fromLeft">
+                                <label class="input__label" for="fullname">Votre nom</label>
+                                <input
+                                    class="input__element"
+                                    type="text"
+                                    name="fullname"
+                                    id="fullname"
+                                    placeholder="ex.: John Multimédia"
+                                    required
+                                />
+                            </div>
 
-        <div class="form">
-            <form
-                action="https://formsubmit.co/31ed33514016147d06d311b6671441ce"
-                method="POST"
-                class="form"
-                autocomplete="off"
-                data-componetnt="Form"
-            >
-                <div class="form__body">
-                    <fieldset>
-                        <div class="input" data-scrolly="fromLeft">
-                            <label class="input__label" for="fullname">Votre nom</label>
-                            <input
-                                class="input__element"
-                                type="text"
-                                name="fullname"
-                                id="fullname"
-                                placeholder="ex.: John Multimédia"
-                                required
-                            />
-                        </div>
+                            <div class="input" data-scrolly="fromLeft">
+                                <label class="input__label" for="email">Courriel</label>
+                                <input
+                                    class="input__element"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="ex.: john.multimedia@gmail.com"
+                                    required
+                                />
+                            </div>
 
-                        <div class="input" data-scrolly="fromLeft">
-                            <label class="input__label" for="email">Courriel</label>
-                            <input
-                                class="input__element"
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="ex.: john.multimedia@gmail.com"
-                                required
-                            />
-                        </div>
+                            <div class="input textarea" data-scrolly="fromLeft">
+                                <label class="input__label" for="comment">Message</label>
+                                <textarea
+                                    class="input__element text_input"
+                                    name="comment"
+                                    placeholder="ex.: Yo, ton portfolio est vraiment sick bro!"
+                                    id="comment"
+                                    required
+                                ></textarea>
+                            </div>
+                        </fieldset>
+                        <footer class="form__footer" data-scrolly="fromLeft">
+                            <button type="submit" class="button">Envoyer</button>
+                        </footer>
+                    </div>
 
-                        <div class="input textarea" data-scrolly="fromLeft">
-                            <label class="input__label" for="comment">Message</label>
-                            <textarea
-                                class="input__element text_input"
-                                name="comment"
-                                placeholder="ex.: Yo, ton portfolio est vraiment sick bro!"
-                                id="comment"
-                                required
-                            ></textarea>
-                        </div>
-                    </fieldset>
-                    <footer class="form__footer" data-scrolly="fromLeft">
-                        <button type="submit" class="button">Envoyer</button>
-                    </footer>
+                    <div class="form__confirmation" data-scrolly="fromLeft">
+                        <h4>Votre message a été envoyé</h4>
+                    </div>
+                </form>
+            </div>
+            <div class="info">
+                <div class="info">
+                    <h3 data-scrolly="fromLeft">
+                        <a href="mailto:adrienr.goupil@gmail.com">adrienr.goupil@gmail.com</a>
+                    </h3>
+                    <h3 data-scrolly="fromLeft">(438) 820-8853</h3>
+                    <a class="button" href="#" data-scrolly="fromLeft">Voir mon CV</a>
                 </div>
-
-                <div class="form__confirmation" data-scrolly="fromLeft">
-                    <h4>Votre message a été envoyé</h4>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
